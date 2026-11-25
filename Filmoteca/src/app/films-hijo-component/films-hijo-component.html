@@ -21,7 +21,7 @@
 
     <p><strong>Género:</strong> {{ Films.genere }}</p>
 
-    <p><strong>Valoración:</strong> ⭐ {{ Films.valoracio }}/10</p>
+    <p><strong>Valoración:</strong>  {{ Films.valoracio }}/10</p>
 
     @if (Films.disponible) {
       <span class="badge bg-success mb-2">Disponible</span>
@@ -33,6 +33,7 @@
       class="btn btn-primary w-100 mt-2"
       [disabled]="!Films.disponible"
       (click)="Afegir_al_carret()">
+
       Añadir al carrito
     </button>
 

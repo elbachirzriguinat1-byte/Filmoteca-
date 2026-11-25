@@ -11,6 +11,7 @@ export class FilmsHijoComponent {
 @Output() Agregar = new EventEmitter<any> ; 
 
 
+
 Afegir_al_carret(){
  this.Agregar.emit(this.Films) ; 
 
